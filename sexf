@@ -218,7 +218,7 @@ function library:CreateWindow(name, size, hidebutton)
 
     window.name = name or ""
     window.size = UDim2.fromOffset(size.X, size.Y) or UDim2.fromOffset(492, 598)
-    window.hidebutton = hidebutton or Enum.KeyCode.v
+    window.hidebutton = hidebutton or Enum.KeyCode.LeftShift
     window.theme = library.theme
 
     local updateevent = Instance.new("BindableEvent")
@@ -3626,6 +3626,8 @@ function library:CreateWindow(name, size, hidebutton)
                             table.remove(list.items, i)
                         end
                     end
+		    
+		
 
                     p:Remove()
                     list.Items.CanvasSize = UDim2.fromOffset(list.Items.AbsoluteSize.X, (#list.items * 90))
@@ -3651,4 +3653,4 @@ function library:CreateWindow(name, size, hidebutton)
     return window
 end
 
-return library
+return libra
