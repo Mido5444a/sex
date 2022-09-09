@@ -916,7 +916,7 @@ function library:CreateWindow(name, size, hidebutton)
 
                     local shorter_keycodes = {
                         ["LeftShift"] = "LSHIFT",
-                        ["RightShift"] = "RSHIFT",
+                        ["LeftShift"] = "LSHIFT",
                         ["LeftControl"] = "LCTRL",
                         ["RightControl"] = "RCTRL",
                         ["LeftAlt"] = "LALT",
